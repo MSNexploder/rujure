@@ -1,12 +1,17 @@
 language: ruby
+before_install:
+  - gem update --system
+  - gem --version
 rvm:
-  - jruby-18mode
-  - jruby-19mode
+  - jruby
   - jruby-head
 jdk:
   - openjdk6
   - oraclejdk7
   - oraclejdk8
 matrix:
+  exclude:
+    - rvm: jruby-head
+      jdk: openjdk6
   allow_failures:
     - rvm: jruby-head
