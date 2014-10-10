@@ -1,5 +1,7 @@
 # Rujure
 
+[![Build Status](https://travis-ci.org/MSNexploder/rujure.png)](https://travis-ci.org/MSNexploder/rujure)
+
 Rujure helps you to interoperate between Clojure and JRuby on JVM.
 
 ## Installation
