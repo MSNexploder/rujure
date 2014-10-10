@@ -4,5 +4,5 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'clojure_jar', git: 'https://github.com/msnexploder/clojure_jar', branch: 'master'
+  gem 'clojure_jar', :git => 'https://github.com/msnexploder/clojure_jar', :branch => 'master'
 end
