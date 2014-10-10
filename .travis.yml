@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+  - jruby-18mode
+  - jruby-19mode
+  - jruby-head
+jdk:
+  - openjdk6
+  - oraclejdk7
+  - oraclejdk8
+matrix:
+  allow_failures:
+    - rvm: jruby-head
