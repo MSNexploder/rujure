@@ -1,3 +1,4 @@
+sudo: false
 language: ruby
 before_install:
   - gem update --system
@@ -5,15 +6,12 @@ before_install:
   - gem install bundler
   - bundler --version
 rvm:
-  - jruby
+  - jruby-1.7
+  - jruby-9000
   - jruby-head
 jdk:
-  - openjdk6
   - oraclejdk7
   - oraclejdk8
 matrix:
-  exclude:
-    - rvm: jruby-head
-      jdk: openjdk6
   allow_failures:
     - rvm: jruby-head
